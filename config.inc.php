@@ -36,11 +36,11 @@ Typecho_Common::init();
 /** 定义数据库参数 */
 $db = new Typecho_Db('Pdo_Mysql', 'typecho_');
 $db->addServer(array (
-  "name": "default",
-  "type": "postgres",
-  "url": <postgres://nfcyhuyl:upgyf7CtS-TTC1bjiXR7GiYd9OVpNiLA@satao.db.elephantsql.com/nfcyhuyl>, 
-  "synchronize": true,
-  "logging": true,
-  "entities": ["src/entity/*.*"]
+  "name" => "default",
+  "type" => "postgres",
+  "url" => <postgres://nfcyhuyl:upgyf7CtS-TTC1bjiXR7GiYd9OVpNiLA@satao.db.elephantsql.com/nfcyhuyl>, 
+  "synchronize" => true,
+  "logging" => true,
+  "entities" => ["src/entity/*.*"]
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
