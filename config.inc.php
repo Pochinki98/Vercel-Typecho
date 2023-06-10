@@ -38,7 +38,7 @@ $db = new Typecho_Db('Pdo_Mysql', 'typecho_');
 $db->addServer(array (
   "name" => "default",
   "type" => "postgres",
-  "url" => <postgres://nfcyhuyl:upgyf7CtS-TTC1bjiXR7GiYd9OVpNiLA@satao.db.elephantsql.com/nfcyhuyl>, 
+  "url" => "postgres://nfcyhuyl:upgyf7CtS-TTC1bjiXR7GiYd9OVpNiLA@satao.db.elephantsql.com/nfcyhuyl", 
   "synchronize" => true,
   "logging" => true,
   "entities" => ["src/entity/*.*"]
