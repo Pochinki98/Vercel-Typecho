@@ -36,12 +36,11 @@ Typecho_Common::init();
 /** 定义数据库参数 */
 $db = new Typecho_Db('Pdo_Mysql', 'typecho_');
 $db->addServer(array (
-  'host' => 'sql102.byetcluster.com',
-  'user' => 'fr3a_34398599',
-  'password' => 'freehost258369',
-  'charset' => 'utf8mb4',
-  'port' => '3306',
-  'database' => 'fr3a_34398599_123456',
-  'engine' => 'MyISAM',
+  "name": "default",
+  "type": "postgres",
+  "url": <postgres://nfcyhuyl:upgyf7CtS-TTC1bjiXR7GiYd9OVpNiLA@satao.db.elephantsql.com/nfcyhuyl>, 
+  "synchronize": true,
+  "logging": true,
+  "entities": ["src/entity/*.*"]
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
